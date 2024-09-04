@@ -8,6 +8,9 @@
 body {
   background: #e4e4e4;
 }
+button {
+  cursor: pointer;
+}
 
 nav {
   background: white;
@@ -50,6 +53,8 @@ ul li {
   z-index: 999;
   position: fixed;
   top: 46px;
+  height: 80vh;
+  overflow-y: scroll;
 }
 .cartProduct {
   display: flex;
