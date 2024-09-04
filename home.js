@@ -8,6 +8,8 @@ cartiew.addEventListener("click", () => {
 });
 
 let cart = [];
+let total = 1;
+
 const handleAddRoCArt = () => {
   const addCartBtn = document.querySelectorAll(".addToCartBtn");
   addCartBtn.forEach((button) => {
@@ -57,6 +59,11 @@ const handleCartDisplay = (cart) => {
             <p>${cartItem.productDescription}</p>
             <div class="price">
               <h1>${cartItem.productPrice}</h1>
+              <div class ="add-minus">
+                <button class="removbtn">-</button>
+              <h4 class="totalOne"></h4>
+              <button class="addbtn">+</button>
+              </div>
             </div>
           </div>
         </div>
